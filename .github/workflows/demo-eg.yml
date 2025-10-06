@@ -2,10 +2,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      SERVICE_NAME: ${{vars.SERVICE_NAME}}
-      DB_PASSWORD: ${{vars.DB_PASSWORD}}
+      SERVICE_NAME: ${{ vars.SERVICE_NAME }}
+      DB_PASSWORD: ${{ vars.DB_PASSWORD }}
     steps:
       - name: Print variables
         run: |
-          echo "Service name: $SERVICE_NANE"
+          echo "Service name: $SERVICE_NAME"
           echo "DB password: $DB_PASSWORD"
